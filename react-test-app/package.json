@@ -20,6 +20,8 @@
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server/server.js --ignore dist/",
+    "dev:bundler": "webpack -w --mode=development",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
